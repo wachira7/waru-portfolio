@@ -12,17 +12,14 @@ const config: Config = {
         dark: {
           DEFAULT: '#1a1a1a',
           light: '#2d2d2d',
-          darker: '#0f0f0f'
+          lighter: '#333333',
+          darker: '#0f0f0f',
         },
         primary: {
           DEFAULT: '#ff4d4d',
           dark: '#e60000',
-          light: '#ff8080'
-        },
-        accent: '#00ff00'
-      },
-      fontFamily: {
-        sans: ['var(--font-inter)', 'sans-serif'],
+          light: '#ff8080',
+        }
       },
     },
   },

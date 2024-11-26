@@ -64,47 +64,49 @@ export const NAVIGATION = [
   ]
   
   // Add services section constants
-  export const SERVICES = [
-    {
-      id: '1',
-      title: 'Web Development',
-      description: 'Building modern, responsive websites and web applications with React, Next.js, and other cutting-edge technologies.',
-      icon: 'code',
-      features: [
-        'Custom website development',
-        'Single Page Applications (SPA)',
-        'Progressive Web Apps (PWA)',
-        'Responsive design implementation'
-      ],
-      isAvailable: true
-    },
-    {
-      id: '2',
-      title: 'Technical SEO',
-      description: 'Optimizing your website performance and search engine visibility through technical improvements.',
-      icon: 'search',
-      features: [
-        'Performance optimization',
-        'Search engine optimization',
-        'Website audits',
-        'Core Web Vitals improvement'
-      ],
-      isAvailable: true
-    },
-    {
-      id: '3',
-      title: 'API Development',
-      description: 'Designing and building robust APIs to power your web and mobile applications.',
-      icon: 'api',
-      features: [
-        'RESTful API design',
-        'API documentation',
-        'Integration services',
-        'Performance optimization'
-      ],
-      isAvailable: true
-    }
-  ]
+  import { Service } from '@/types'
+
+export const SERVICES: Service[] = [
+  {
+    id: '1',
+    title: 'Web Development',
+    description: 'Building modern, responsive websites and web applications with React, Next.js, and other cutting-edge technologies.',
+    icon: 'code',  // Now TypeScript knows this must be one of our IconName values
+    features: [
+      'Custom website development',
+      'Single Page Applications (SPA)',
+      'Progressive Web Apps (PWA)',
+      'Responsive design implementation'
+    ],
+    isAvailable: true
+  },
+  {
+    id: '2',
+    title: 'Technical SEO',
+    description: 'Optimizing your website performance and search engine visibility through technical improvements.',
+    icon: 'search',
+    features: [
+      'Performance optimization',
+      'Search engine optimization',
+      'Website audits',
+      'Core Web Vitals improvement'
+    ],
+    isAvailable: true
+  },
+  {
+    id: '3',
+    title: 'API Development',
+    description: 'Designing and building robust APIs to power your web and mobile applications.',
+    icon: 'api',
+    features: [
+      'RESTful API design',
+      'API documentation',
+      'Integration services',
+      'Performance optimization'
+    ],
+    isAvailable: true
+  }
+]
   
   // Add skills section constants
   export const SKILLS = {
