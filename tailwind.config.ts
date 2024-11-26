@@ -9,14 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#ff4d4d',    // You can adjust these colors
-        secondary: '#1a1a1a',
-        accent: '#00ff00',
         dark: {
           DEFAULT: '#1a1a1a',
-          lighter: '#2d2d2d',
+          light: '#2d2d2d',
           darker: '#0f0f0f'
-        }
+        },
+        primary: {
+          DEFAULT: '#ff4d4d',
+          dark: '#e60000',
+          light: '#ff8080'
+        },
+        accent: '#00ff00'
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'sans-serif'],
@@ -25,4 +28,5 @@ const config: Config = {
   },
   plugins: [],
 }
+
 export default config
