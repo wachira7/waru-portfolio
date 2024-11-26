@@ -1,4 +1,4 @@
-export type IconName = 'code' | 'consulting' | 'api' | 'web' | 'mobile' | 'design'
+export type IconName = 'code' | 'consulting' | 'api' | 'web' | 'mobile' | 'design' | 'search'
 export type Status = 'draft' | 'published' | 'archived'
 
 // Project interface
