@@ -74,7 +74,7 @@ const Hero = () => {
           <div className="relative">
             <div className="aspect-square rounded-2xl overflow-hidden bg-dark-lighter">
               <img 
-                src="/api/placeholder/600/600" 
+                src="/images/profile/IMG-20240729-WA0036.jpg" 
                 alt="Emmanuel Warutsz" 
                 className="w-full h-full object-cover"
               />

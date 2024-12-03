@@ -44,7 +44,7 @@ const Sidebar = () => {
     <div className={`flex items-center px-4 mb-8 ${isExpanded ? 'justify-between' : 'justify-center'}`}>
       <div className="w-12 h-12 rounded-full overflow-hidden bg-dark-light">
         <img 
-          src="/api/placeholder/48/48" 
+          src="/images/profile/20241114_160833.jpg" 
           alt="Profile" 
           className="w-full h-full object-cover"
         />

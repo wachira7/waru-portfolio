@@ -8,7 +8,8 @@ export const NAVIGATION = [
   ]
   
   export const SOCIAL_LINKS = {
-    github: 'https://github.com/wachira7',
+    githubPersonal: 'https://github.com/wachira7',
+    githubWork: 'https://github.com/waru-emmanuel',
     linkedin: 'https://www.linkedin.com/in/emmanuelwaruts77/',
     twitter: 'your-twitter-url'
   }
@@ -125,3 +126,34 @@ export const SERVICES: Service[] = [
       'Agile Methodologies'
     ]
   }
+
+  export interface Project {
+    id: string;
+    title: string;
+    description: string;
+    image: string;
+    tags: string[];
+    github?: string;
+    demo?: string;
+  }
+ 
+  export const PROJECTS: Project[] = [
+    {
+      id: '1',
+      title: 'Portfolio Website',
+      description: 'Modern portfolio website built with Next.js, React, and Tailwind CSS. Features smooth animations and responsive design.',
+      image: '/images/projects/portfolio.jpg',
+      tags: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript'],
+      github: 'https://github.com/yourusername/portfolio',
+      demo: 'https://your-portfolio.com'
+    },
+    {
+      id: '2',
+      title: 'Logistics Management App',
+      description: 'A Logistics management app built with Python, Flask, React, and Tailwind CSS. Features smooth animations, responsive design and highly secure authentication.',
+      image: '/images/projectimg/LMP-APP.png',
+      tags: ['Python', 'Flask', 'React', 'Tailwind CSS', 'PostgreSQL','SQLite'],
+      github: 'https://github.com/Fuata-tech/logistic_management_system',
+      demo: 'https://fuata-tech-client.onrender.com/welcome'
+    }
+  ];

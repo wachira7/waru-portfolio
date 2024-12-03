@@ -46,31 +46,51 @@ const Footer = () => {
           {/* Social Links */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Connect</h3>
-            <div className="flex space-x-4">
-              <a 
-                href={SOCIAL_LINKS.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <Github size={24} />
-              </a>
-              <a 
-                href={SOCIAL_LINKS.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <Linkedin size={24} />
-              </a>
-              <a 
-                href={SOCIAL_LINKS.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <Twitter size={24} />
-              </a>
+            <div className="flex flex-col space-y-4">
+              <div className="flex space-x-4">
+                <a 
+                  href={SOCIAL_LINKS.githubPersonal}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+                >
+                  <Github size={24} />
+                  <span className="text-sm">Personal GitHub</span>
+                </a>
+              </div>
+              <div className="flex space-x-4">
+                <a 
+                  href={SOCIAL_LINKS.githubWork}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+                >
+                  <Github size={24} />
+                  <span className="text-sm">Work GitHub</span>
+                </a>
+              </div>
+              <div className="flex space-x-4">
+                <a 
+                  href={SOCIAL_LINKS.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+                >
+                  <Linkedin size={24} />
+                  <span className="text-sm">LinkedIn</span>
+                </a>
+              </div>
+              <div className="flex space-x-4">
+                <a 
+                  href={SOCIAL_LINKS.twitter}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+                >
+                  <Twitter size={24} />
+                  <span className="text-sm">Twitter</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

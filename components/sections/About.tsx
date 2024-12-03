@@ -13,7 +13,7 @@ const skills = [
   {
     category: "Backend Development",
     icon: <Server className="w-6 h-6 text-primary" />,
-    skills: ["Node.js", "Python", "RESTful APIs", "SQLite", "PostgreSQL"]
+    skills: ["Node.js", "Python", "RESTful APIs", "SQLite", "PostgreSQL","Flask"]
   },
   {
     category: "Other Skills",
