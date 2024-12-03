@@ -24,7 +24,7 @@ html {
   scroll-behavior: smooth;
 }
 
-
+/* Tech Stack Carousel Animations */
 @keyframes slide {
   0% {
     transform: translateX(0);
@@ -37,13 +37,24 @@ html {
 .tech-slider {
   animation: slide 30s linear infinite;
   width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 2rem;  /* Added consistent spacing */
 }
 
 .tech-slider:hover {
   animation-play-state: paused;
 }
 
-/* Add fade edges */
+.tech-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0;  /* Added padding for better spacing */
+  background: rgba(0, 0, 0, 0.1);  /* Subtle background */
+}
+
+/* Gradient edges */
 .tech-carousel::before,
 .tech-carousel::after {
   content: '';
@@ -57,10 +68,16 @@ html {
 
 .tech-carousel::before {
   left: 0;
-  background: linear-gradient(to right, #1a1a1a, transparent);
+  background: linear-gradient(to right, var(--background), transparent);
 }
 
 .tech-carousel::after {
   right: 0;
-  background: linear-gradient(to left, #1a1a1a, transparent);
+  background: linear-gradient(to left, var(--background), transparent);
+}
+
+/* Ensure icons are above gradient overlay */
+.tech-slider svg {
+  z-index: 1;
+  position: relative;
 }
