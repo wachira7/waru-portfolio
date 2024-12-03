@@ -19,3 +19,48 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.tech-slider {
+  animation: slide 30s linear infinite;
+  width: fit-content;
+}
+
+.tech-slider:hover {
+  animation-play-state: paused;
+}
+
+/* Add fade edges */
+.tech-carousel::before,
+.tech-carousel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.tech-carousel::before {
+  left: 0;
+  background: linear-gradient(to right, #1a1a1a, transparent);
+}
+
+.tech-carousel::after {
+  right: 0;
+  background: linear-gradient(to left, #1a1a1a, transparent);
+}
