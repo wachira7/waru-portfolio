@@ -113,9 +113,9 @@ export const SERVICES: Service[] = [
   export const SKILLS = {
     technical: [
       { name: 'React', level: 90 },
-      { name: 'TypeScript', level: 85 },
-      { name: 'Node.js', level: 80 },
-      { name: 'Next.js', level: 85 },
+      { name: 'TypeScript', level: 55 },
+      { name: 'Node.js', level: 50 },
+      { name: 'Next.js', level: 65 },
       { name: 'Python', level: 75 }
     ],
     soft: [

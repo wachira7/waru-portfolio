@@ -97,7 +97,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="border-t border-dark-light mt-8 pt-8 text-center text-gray-400">
-          <p>© {new Date().getFullYear()} Emmanuel Warutsz. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Emmanuel Wachira. All rights reserved.</p>
         </div>
       </div>
     </footer>

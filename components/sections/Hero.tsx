@@ -3,6 +3,8 @@
 import React from 'react'
 import { ArrowRight, Github, Linkedin, Twitter } from 'lucide-react'
 import { SOCIAL_LINKS } from '@/lib/constants'
+import Image from 'next/image'
+
 
 const Hero = () => {
   return (
@@ -14,7 +16,7 @@ const Hero = () => {
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
                 Full Stack Developer
-                <span className="text-primary block">Emmanuel Warutsz</span>
+                <span className="text-primary block">Emmanuel Wachira</span>
               </h1>
               <p className="text-lg sm:text-xl text-gray-400">
                 Building modern web applications with cutting-edge technologies.
@@ -73,9 +75,9 @@ const Hero = () => {
           {/* Right Column - Image */}
           <div className="relative">
             <div className="aspect-square rounded-2xl overflow-hidden bg-dark-lighter">
-              <img 
+              <Image 
                 src="/images/profile/IMG-20240729-WA0036.jpg" 
-                alt="Emmanuel Warutsz" 
+                alt="Emmanuel Wachira" 
                 className="w-full h-full object-cover"
               />
               {/* Decorative Elements */}

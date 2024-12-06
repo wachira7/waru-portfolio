@@ -4,19 +4,19 @@ import CircularProgress from '@/components/ui/CircularProgress'
 const CODING_SKILLS = [
   { label: 'TypeScript', percentage: 55 },
   { label: 'JavaScript', percentage: 80 },
-  { label: 'CSS', percentage: 85 },
-  { label: 'HTML', percentage: 90 },
+  { label: 'CSS', percentage: 80 },
+  { label: 'HTML', percentage: 80 },
   { label: 'SQL', percentage: 65 },
   { label: 'Python', percentage:80}
 ]
 
 const TECHNOLOGIES = [
-  { label: 'Next.js', percentage: 70 },
+  { label: 'Next.js', percentage: 60 },
   { label: 'Node.js', percentage: 50 },
 //   { label: 'Express.js', percentage: 50 },
-  { label: 'React.js', percentage: 90 },
+  { label: 'React.js', percentage: 80 },
   { label: 'Tailwind CSS', percentage: 85 },
-  { label: 'Flask', percentage: 75 },
+  { label: 'Flask', percentage: 70 },
   { label: 'PostgreSQL', percentage: 80 },
 ]
 

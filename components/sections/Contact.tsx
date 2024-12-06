@@ -2,6 +2,10 @@
 
 import React, { useState } from 'react'
 import { Mail, Phone, MapPin } from 'lucide-react'
+import emailjs from '@emailjs/browser'
+
+// Initialize EmailJS
+emailjs.init("O8kiblordTUDKcWXe")
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -10,10 +14,35 @@ const ContactSection = () => {
     message: ''
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isLoading, setIsLoading] = useState(false)
+  const [status, setStatus] = useState<'success' | 'error' | null>(null)
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Add form submission logic later
-    console.log(formData)
+    setIsLoading(true)
+    setStatus(null)
+
+    try {
+      await emailjs.send(
+        'service_jp2nl6d',
+        'template_x4ati05',
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_email: 'warumanu254@gmail.com',
+        },
+        'O8kiblordTUDKcWXe'
+      )
+
+      setStatus('success')
+      setFormData({ name: '', email: '', message: '' })
+    } catch (error) {
+      console.error('Failed to send email:', error)
+      setStatus('error')
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   return (
@@ -40,7 +69,8 @@ const ContactSection = () => {
               <Phone className="w-6 h-6 text-primary mt-1" />
               <div>
                 <h3 className="font-semibold mb-1">Phone</h3>
-                <p className="text-gray-400">+254 797467325</p>
+                <p className="text-gray-400">+254 705274244</p>
+                <p className="text-gray-400">+254 756126336</p>
               </div>
             </div>
 
@@ -63,6 +93,7 @@ const ContactSection = () => {
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 required
+                disabled={isLoading}
               />
             </div>
             <div>
@@ -73,6 +104,7 @@ const ContactSection = () => {
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 required
+                disabled={isLoading}
               />
             </div>
             <div>
@@ -83,14 +115,26 @@ const ContactSection = () => {
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 required
+                disabled={isLoading}
               />
             </div>
             <button
               type="submit"
-              className="w-full px-8 py-3 bg-primary hover:bg-primary-dark rounded-lg transition-colors"
+              disabled={isLoading}
+              className={`w-full px-8 py-3 bg-primary hover:bg-primary-dark rounded-lg transition-colors ${
+                isLoading ? 'opacity-50 cursor-not-allowed' : ''
+              }`}
             >
-              Send Message
+              {isLoading ? 'Sending...' : 'Send Message'}
             </button>
+
+            {/* Status Messages */}
+            {status === 'success' && (
+              <p className="text-green-500 text-center">Message sent successfully!</p>
+            )}
+            {status === 'error' && (
+              <p className="text-red-500 text-center">Failed to send message. Please try again.</p>
+            )}
           </form>
         </div>
       </div>

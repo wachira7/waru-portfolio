@@ -4,13 +4,15 @@ import React, {useState} from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Home, User, Briefcase, Mail, FileText, Menu, Settings, X } from 'lucide-react'
+import Image from 'next/image'
+
 
 interface NavItemProps {
   href: string
   isActive: boolean
   icon: React.ReactNode
   label: string
-  isExpannded: boolean
+  isExpanded: boolean
 }
 
 const NavItem = ({ href, isActive, icon, label, isExpanded }: NavItemProps) => {
@@ -43,7 +45,7 @@ const Sidebar = () => {
     {/* Profile Image */}
     <div className={`flex items-center px-4 mb-8 ${isExpanded ? 'justify-between' : 'justify-center'}`}>
       <div className="w-12 h-12 rounded-full overflow-hidden bg-dark-light">
-        <img 
+        <Image
           src="/images/profile/20241114_160833.jpg" 
           alt="Profile" 
           className="w-full h-full object-cover"
