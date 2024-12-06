@@ -31,7 +31,8 @@ const ContactSection = () => {
               <Mail className="w-6 h-6 text-primary mt-1" />
               <div>
                 <h3 className="font-semibold mb-1">Email</h3>
-                <p className="text-gray-400">emmanuelwaruts77@gmail.com</p>
+                <p className="text-gray-400">waruterewachira7@gmail.com</p>
+                <p className="text-gray-400">wewaruts@gmail.com</p>
               </div>
             </div>
 
