@@ -14,9 +14,9 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         <Sidebar />
         
         {/* Main Content */}
-        <main className="flex-1 ml-20 transition-all duration-300">
+        <main className="flex-1 ml-20 w-full">
           {/* Content Container */}
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen pb-20">
+          <div className="max-w-[1600px] mx-auto w-full">
             {children}
           </div>
           

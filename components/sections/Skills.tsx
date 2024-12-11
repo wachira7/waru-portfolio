@@ -17,7 +17,7 @@ const TECHNOLOGIES = [
   { label: 'React.js', percentage: 80 },
   { label: 'Tailwind CSS', percentage: 85 },
   { label: 'Flask', percentage: 70 },
-  { label: 'PostgreSQL', percentage: 80 },
+  { label: 'PostgreSQL', percentage: 60 },
 ]
 
 const Skills = () => {

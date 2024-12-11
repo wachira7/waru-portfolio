@@ -5,7 +5,6 @@ import { ArrowRight, Github, Linkedin, Twitter } from 'lucide-react'
 import { SOCIAL_LINKS } from '@/lib/constants'
 import Image from 'next/image'
 
-
 const Hero = () => {
   return (
     <section className="min-h-[calc(100vh-80px)] flex items-center">
@@ -74,10 +73,13 @@ const Hero = () => {
 
           {/* Right Column - Image */}
           <div className="relative">
-            <div className="aspect-square rounded-2xl overflow-hidden bg-dark-lighter">
+            <div className="aspect-square rounded-2xl overflow-hidden bg-dark-lighter relative">
               <Image 
-                src="/images/profile/IMG-20240729-WA0036.jpg" 
-                alt="Emmanuel Wachira" 
+                src="/images/profile/IMG-20240729-WA0036.jpg"
+                alt="Emmanuel Wachira"
+                width={600}
+                height={600}
+                priority
                 className="w-full h-full object-cover"
               />
               {/* Decorative Elements */}

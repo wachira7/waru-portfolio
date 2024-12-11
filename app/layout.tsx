@@ -6,7 +6,7 @@ import RootLayout from '@/components/layout/RootLayout'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Emmanuel Warutsz - Portfolio',
+  title: 'Emmanuel Wachira - Portfolio',
   description: 'Full Stack Developer Portfolio',
 }
 
@@ -17,7 +17,7 @@ export default function Layout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} w-full`}>
         <RootLayout>
           {children}
         </RootLayout>

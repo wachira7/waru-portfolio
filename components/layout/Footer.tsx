@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About Section */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Emmanuel Warutsz</h3>
+            <h3 className="text-lg font-semibold mb-4">Emmanuel W. Wachira</h3>
             <p className="text-gray-400">
               Full-stack developer specializing in modern web technologies and creating exceptional digital experiences.
             </p>
