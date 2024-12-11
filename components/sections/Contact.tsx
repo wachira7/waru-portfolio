@@ -30,7 +30,8 @@ const ContactSection = () => {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
-          to_email: 'warumanu254@gmail.com',
+          to_name: 'Emmanuel Warutere',
+          reply_to: formData.email
         },
         'O8kiblordTUDKcWXe'
       )
