@@ -2,10 +2,10 @@
 
 import React from 'react'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
-import { PROJECTS } from '@/lib/constants'
+import { PROJECTS, Project } from '@/lib/constants'
 import Image from 'next/image'
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <div className="bg-dark-light rounded-lg overflow-hidden group hover:transform hover:scale-[1.02] transition-all duration-300">
       {/* Project Image */}
