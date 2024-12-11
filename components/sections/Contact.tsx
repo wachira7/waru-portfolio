@@ -27,11 +27,10 @@ const ContactSection = () => {
         'service_jp2nl6d',
         'template_qp6hq8m',
         {
+          to_name: 'Wachira',  
           from_name: formData.name,
-          from_email: formData.email,
           message: formData.message,
-          to_name: 'Emmanuel Warutere',
-          reply_to: formData.email
+          reply_to: formData.email  
         },
         'O8kiblordTUDKcWXe'
       )
