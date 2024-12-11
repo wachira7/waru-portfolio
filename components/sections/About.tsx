@@ -42,8 +42,8 @@ const About = () => {
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">Background</h3>
             <p className="text-gray-400">
-             With a year of hands-on experience in web development, I&apos;ve worked on various projects
-             that have helped me develop strong skills in modern web technologies. I&apos;m passionate
+             With a year of hands-on experience in web development, I have worked on various projects
+             that have helped me develop strong skills in modern web technologies. I am passionate
              about creating efficient, scalable, and user-friendly solutions while continuously
              learning and growing in this dynamic field.
             </p>
