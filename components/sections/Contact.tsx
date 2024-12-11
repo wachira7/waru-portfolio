@@ -25,7 +25,7 @@ const ContactSection = () => {
     try {
       await emailjs.send(
         'service_jp2nl6d',
-        'template_x4ati05',
+        'template_qp6hq8m',
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -130,7 +130,7 @@ const ContactSection = () => {
 
             {/* Status Messages */}
             {status === 'success' && (
-              <p className="text-green-500 text-center">Message sent successfully!</p>
+              <p className="text-green-500 text-center">Message sent successfully, Thanks!</p>
             )}
             {status === 'error' && (
               <p className="text-red-500 text-center">Failed to send message. Please try again.</p>
