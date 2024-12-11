@@ -44,13 +44,23 @@ const Hero = () => {
 
             {/* Social Links */}
             <div className="flex items-center gap-4">
-              <a 
-                href={SOCIAL_LINKS.github}
+            <a 
+                href={SOCIAL_LINKS.githubPersonal}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Github size={24} />
+                Personal
+              </a>
+              <a 
+                href={SOCIAL_LINKS.githubWork}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                <Github size={24} />
+                Work
               </a>
               <a 
                 href={SOCIAL_LINKS.linkedin}
