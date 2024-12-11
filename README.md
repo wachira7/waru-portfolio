@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Emmanuel Wachira's Portfolio
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js, React, and Tailwind CSS.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 📱 Fully Responsive Design
+- 🎨 Modern UI/UX
+- 🌙 Smooth Animations
+- 📊 Interactive Project Showcase
+- 📫 Contact Form Integration
+- 🎯 Skills & Services Display
+- 🔄 Real-time Section Highlighting
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Built With
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Next.js 14](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [EmailJS](https://www.emailjs.com/)
+- [Lucide Icons](https://lucide.dev/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📂 Project Structure
+portfolio/
+├── app/
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── layout/
+│   │   ├── Sidebar.tsx
+│   │   └── Footer.tsx
+│   └── sections/
+│       ├── Hero.tsx
+│       ├── About.tsx
+│       ├── Services.tsx
+│       ├── Projects.tsx
+│       └── Contact.tsx
+├── lib/
+│   └── constants.ts
+└── public/
+└── images/
+Copy
+## 🌟 Features in Detail
 
-## Learn More
+- **Responsive Sidebar Navigation**: Interactive sidebar with smooth transitions and section highlighting
+- **Dynamic Project Showcase**: Display of recent projects with links to live demos and source code
+- **Skills Visualization**: Interactive display of technical skills and expertise
+- **Contact Form**: Integrated EmailJS for seamless contact functionality
+- **Modern Design**: Clean and professional UI with smooth animations
+- **Performance Optimized**: Fast loading times and optimal resource usage
 
-To learn more about Next.js, take a look at the following resources:
+## 🤝 Contact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Emmanuel Wachira
+- Email: [waruterewachira7@gmail.com](mailto:waruterewachira7@gmail.com)
+- LinkedIn: [Emmanuel Wachira](https://www.linkedin.com/in/emmanuelwaruts77/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with ❤️ by Emmanuel Wachira
