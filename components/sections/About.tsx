@@ -30,7 +30,7 @@ const About = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-          I&apos;m a passionate Full Stack Developer with expertise in building modern web applications
+          I&apos;m a passionate Full Stack Developer with expertise in building modern web applications using cutting-edge technologies. {/* eslint-disable-line react/no-unescaped-entities */}
           </p>
         </div>
 
@@ -42,8 +42,8 @@ const About = () => {
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">Background</h3>
             <p className="text-gray-400">
-             With a year of hands-on experience in web development, I have worked on various projects
-             that have helped me develop strong skills in modern web technologies. I am passionate
+             With a year of hands-on experience in web development, I&apos;ve worked on various projects
+             that have helped me develop strong skills in modern web technologies. I&apos;m passionate
              about creating efficient, scalable, and user-friendly solutions while continuously
              learning and growing in this dynamic field.
             </p>
