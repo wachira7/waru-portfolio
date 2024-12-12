@@ -2,13 +2,15 @@
 
 import React, { useState } from 'react'
 import { Mail, Phone, MapPin } from 'lucide-react'
-import emailjs from '@emailjs/browser'
 
-// Initialize EmailJS
-emailjs.init("O8kiblordTUDKcWXe")
+interface FormData {
+  name: string
+  email: string
+  message: string
+}
 
 const ContactSection = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
     message: ''
@@ -23,22 +25,22 @@ const ContactSection = () => {
     setStatus(null)
 
     try {
-      await emailjs.send(
-        'service_jp2nl6d',
-        'template_qp6hq8m',
-        {
-          to_name: 'Wachira',  
-          from_name: formData.name,
-          message: formData.message,
-          reply_to: formData.email  
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         },
-        'O8kiblordTUDKcWXe'
-      )
+        body: JSON.stringify(formData)
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to send message')
+      }
 
       setStatus('success')
       setFormData({ name: '', email: '', message: '' })
     } catch (error) {
-      console.error('Failed to send email:', error)
+      console.error('Failed to send message:', error)
       setStatus('error')
     } finally {
       setIsLoading(false)
